@@ -1,0 +1,46 @@
+{
+  "status": "SIMULATION_ONLY_NOT_HARDWARE_VALIDATED",
+  "peak_altitude_m": 4.117273485143427,
+  "peak_time_s": 1.1280000000000008,
+  "initial_thrust_n": 59493.19201204069,
+  "initial_thrust_to_weight": 3.791635778530429,
+  "initial_massflow_kgps": 103.2619252237167,
+  "initial_gas_kg": 70.19317160826594,
+  "gas_consumed_kg": 32.53373351691746,
+  "gas_left_kg": 37.659438091348456,
+  "total_upward_thrust_impulse_ns": 17711.259441961258,
+  "choked_steps": 225,
+  "ideal_potential_energy_at_peak_j": 64602.65603693086,
+  "numerical_mass_balance_error_kg": 2.842170943040401e-14,
+  "discretization": "semi-implicit Euler; dt-refinement separately reported",
+  "notes": [
+    "Illustrative uniform-pressure ideal nitrogen model; not a Roadster reverse-engineering claim.",
+    "Vertical point mass; excludes pitch/roll/yaw, traction, landing loads, drag and tank hardware.",
+    "Independent agreement checks test implementation, not physical-model validity."
+  ],
+  "step_refinement": {
+    "coarse_dt_s": 0.002,
+    "fine_dt_s": 0.001,
+    "coarse_peak_m": 4.117273485143427,
+    "fine_peak_m": 4.110027589075184,
+    "peak_difference_relative": 0.001762979909795038,
+    "dt_sensitivity_below_1pct": true,
+    "warning": "Step-size agreement is numerical consistency, not experimental validation."
+  },
+  "input_configuration": {
+    "vehicle_mass_kg": 1600.0,
+    "tank_volume_m3": 0.25,
+    "tank_pressure_pa": 25000000.0,
+    "tank_temperature_k": 300.0,
+    "ambient_pressure_pa": 101325.0,
+    "throat_area_m2": 0.002,
+    "discharge_coefficient": 0.9,
+    "gas_constant_j_per_kg_k": 296.8,
+    "gamma": 1.4,
+    "valve_open_s": 0.45,
+    "duration_s": 5.0,
+    "dt_s": 0.002,
+    "gravity_mps2": 9.80665
+  },
+  "source_configuration": "examples\\pressurized_jump.json"
+}

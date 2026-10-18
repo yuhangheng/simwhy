@@ -1,0 +1,12 @@
+{
+  "vehicle_mass_kg": 1600.0,
+  "tank_volume_m3": 0.25,
+  "tank_pressure_pa": 25000000.0,
+  "tank_temperature_k": 300.0,
+  "ambient_pressure_pa": 101325.0,
+  "throat_area_m2": 0.002,
+  "discharge_coefficient": 0.9,
+  "valve_open_s": 0.45,
+  "duration_s": 5.0,
+  "dt_s": 0.002
+}

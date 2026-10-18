@@ -1,0 +1,24 @@
+{
+  "method": "README/source/issue inspection, not local solver execution",
+  "purpose": "track upstream research tools used to develop reproducible, affordable engineering simulations",
+  "repositories": [
+    "kernel-14/ReproAgent",
+    "LithiumDA/ReproRepo",
+    "Future-House/paper-qa",
+    "peterdsharpe/AeroSandbox",
+    "su2code/SU2",
+    "OpenMDAO/OpenMDAO",
+    "mdolab/dafoam",
+    "PyFR/PyFR",
+    "opensbli/opensbli",
+    "Extrality/airfrans_lib",
+    "RocketPy-Team/RocketPy",
+    "JSBSim-Team/jsbsim",
+    "NVIDIA/physicsnemo",
+    "SakanaAI/AI-Scientist",
+    "cmudrc/agent-mcp",
+    "cmudrc/agentic-bench",
+    "openai/mle-bench",
+    "microsoft/agent-lightning"
+  ]
+}
