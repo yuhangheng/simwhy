@@ -1,5 +1,5 @@
 {
-  "checked_at_utc": "2026-10-18T22:49:36.967503+00:00",
+  "checked_at_utc": "2026-10-19T08:57:00.199751+00:00",
   "metadata_only": true,
   "repositories": {
     "kernel-14/ReproAgent": {
@@ -22,7 +22,7 @@
       "url": "https://github.com/Future-House/paper-qa",
       "default_branch": "main",
       "latest_push_utc": "2026-10-13T21:49:06Z",
-      "stars": 9406,
+      "stars": 9411,
       "open_issues": 155,
       "archived": false
     },
@@ -53,7 +53,7 @@
     "mdolab/dafoam": {
       "url": "https://github.com/mdolab/dafoam",
       "default_branch": "main",
-      "latest_push_utc": "2026-10-18T15:41:12Z",
+      "latest_push_utc": "2026-10-19T01:01:21Z",
       "stars": 357,
       "open_issues": 15,
       "archived": false
@@ -86,23 +86,23 @@
       "url": "https://github.com/RocketPy-Team/RocketPy",
       "default_branch": "master",
       "latest_push_utc": "2026-10-05T23:50:37Z",
-      "stars": 1138,
+      "stars": 1139,
       "open_issues": 61,
       "archived": false
     },
     "JSBSim-Team/jsbsim": {
       "url": "https://github.com/JSBSim-Team/jsbsim",
       "default_branch": "master",
-      "latest_push_utc": "2026-10-18T22:48:01Z",
+      "latest_push_utc": "2026-10-18T23:03:57Z",
       "stars": 2303,
-      "open_issues": 55,
+      "open_issues": 54,
       "archived": false
     },
     "NVIDIA/physicsnemo": {
       "url": "https://github.com/NVIDIA/physicsnemo",
       "default_branch": "main",
       "latest_push_utc": "2026-10-17T15:28:47Z",
-      "stars": 3361,
+      "stars": 3364,
       "open_issues": 126,
       "archived": false
     },
@@ -110,7 +110,7 @@
       "url": "https://github.com/SakanaAI/AI-Scientist",
       "default_branch": "main",
       "latest_push_utc": "2025-12-19T07:46:21Z",
-      "stars": 14757,
+      "stars": 14763,
       "open_issues": 123,
       "archived": false
     },
@@ -142,8 +142,8 @@
       "url": "https://github.com/microsoft/agent-lightning",
       "default_branch": "main",
       "latest_push_utc": "2026-10-09T07:47:53Z",
-      "stars": 18746,
-      "open_issues": 173,
+      "stars": 18751,
+      "open_issues": 174,
       "archived": false
     }
   }
