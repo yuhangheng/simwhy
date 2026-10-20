@@ -10,6 +10,7 @@ from dataclasses import asdict
 from .core import Config, simulate, step_refinement
 from .viz import render_svg
 from .audit import audit_directory, format_report_text, format_report_json
+from .coupling_gate import assess_evidence
 
 
 def main():
@@ -21,6 +22,9 @@ def main():
     audit=sub.add_parser("audit", help="Audit a coupled-simulation directory for failure patterns")
     audit.add_argument("directory", type=Path, help="Directory to audit")
     audit.add_argument("--format", choices=["text", "json"], default="text")
+    gate=sub.add_parser("coupling-audit", help="Screen fixed-geometry CFD and pressure-feedback ablation evidence")
+    gate.add_argument("evidence", type=Path, help="JSON of derived CFD pairs and synchronized signal traces")
+    gate.add_argument("--format", choices=["text", "json"], default="text")
     args=parser.parse_args()
 
     if args.command == "audit":
@@ -34,6 +38,22 @@ def main():
             print(format_report_text(report))
         # Exit code: 1 if any critical failure
         sys.exit(1 if report.fail_count > 0 else 0)
+
+    if args.command == "coupling-audit":
+        try:
+            evidence = json.loads(args.evidence.read_text(encoding="utf-8"))
+            result = assess_evidence(evidence)
+        except (OSError, ValueError, TypeError, json.JSONDecodeError) as exc:
+            print(f"coupling evidence error: {exc}", file=sys.stderr)
+            sys.exit(2)
+        if args.format == "json":
+            print(json.dumps(result, indent=2))
+        else:
+            print(f"Coupling audit: {result['verdict']}")
+            print(f"Fixed-geometry CFD: {result['cfd']['status']}")
+            print(f"Pressure-feedback ablation: {result['pressure_ablation']['status']}")
+            print("Result is only an evidence screen, not physical validation.")
+        sys.exit(0 if result['verdict'] == "NUMERICALLY_SUPPORTED_REQUIRES_PHYSICAL_VALIDATION" else 1)
 
     c=Config.from_dict(json.loads(args.configuration.read_text(encoding="utf-8")))
     rows, report=simulate(c)
