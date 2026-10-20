@@ -71,6 +71,20 @@ gas-model mismatch, and unlabeled research parameters). See
 [docs/audit_catalog.md](docs/audit_catalog.md). Exit code is `1` if any
 critical failure is present, so it drops straight into CI.
 
+## Coupling evidence screen (generic)
+
+The new `coupling-audit` command checks whether a fixed-geometry pressure sweep
+shows an upstream change above iteration drift, and whether disconnecting the
+pressure feedback changes *actual consumed* dynamic signals:
+
+```bash
+python -m simwhy coupling-audit examples/coupling_evidence_synthetic.json --format json
+```
+
+The example uses synthetic data and must report `PHYSICAL_COUPLING_NOT_VALIDATED`.
+Even nonzero numerical sensitivity is **not** physical validation. The checker
+does not read native CFD/Simulink binaries. See [evidence contract and limits](docs/coupling_evidence.md).
+
 ## Contribute a phenomenon
 
 Open a GitHub Issue with: a publicly documented phenomenon, source evidence, physical quantities/units, the *minimum* model capable of falsifying a claim, independent sanity checks, and what real data would be needed for validation. **Do not upload third-party proprietary models, confidential CAD, personal data, or unlicensed papers.**

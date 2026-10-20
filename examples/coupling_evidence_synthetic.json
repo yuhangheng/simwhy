@@ -1,0 +1,71 @@
+{
+  "note": "SYNTHETIC EXAMPLE ONLY: no solver was run for these values.",
+  "thresholds": {
+    "max_mass_imbalance_pct": 1,
+    "min_signal_to_drift": 3,
+    "min_inlet_delta_pa": 0.1,
+    "min_thrust_delta_n": 0.1
+  },
+  "cfd_cases": [
+    {
+      "geometry_id": "demo_duct",
+      "backpressure_pa": 10000,
+      "upstream_pressure_pa": 20000,
+      "iteration_drift_pa": 15,
+      "mass_imbalance_pct": 0.2
+    },
+    {
+      "geometry_id": "demo_duct",
+      "backpressure_pa": 14000,
+      "upstream_pressure_pa": 20000.01,
+      "iteration_drift_pa": 15,
+      "mass_imbalance_pct": 2.5
+    }
+  ],
+  "pressure_ablation": {
+    "nominal": {
+      "time_s": [
+        0,
+        0.1,
+        0.2
+      ],
+      "pressure_command_pa": [
+        10000,
+        12000,
+        14000
+      ],
+      "inlet_pressure_pa": [
+        20000,
+        20000,
+        20000
+      ],
+      "thrust_n": [
+        1000,
+        1000,
+        1000
+      ]
+    },
+    "pressure_off": {
+      "time_s": [
+        0,
+        0.1,
+        0.2
+      ],
+      "pressure_command_pa": [
+        10000,
+        12000,
+        14000
+      ],
+      "inlet_pressure_pa": [
+        20000,
+        20000,
+        20000
+      ],
+      "thrust_n": [
+        1000,
+        1000,
+        1000
+      ]
+    }
+  }
+}
