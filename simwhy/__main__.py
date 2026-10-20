@@ -1,11 +1,15 @@
-"""Command-line entry point: python -m simwhy run examples/pressurized_jump.json"""
+"""Command-line entry point: python -m simwhy run examples/pressurized_jump.json
+or: python -m simwhy audit <directory> [--format text|json]
+"""
 import argparse
 import csv
 import json
+import sys
 from pathlib import Path
 from dataclasses import asdict
 from .core import Config, simulate, step_refinement
 from .viz import render_svg
+from .audit import audit_directory, format_report_text, format_report_json
 
 
 def main():
@@ -14,7 +18,23 @@ def main():
     run=sub.add_parser("run", help="Run one ideal-gas pulse model")
     run.add_argument("configuration", type=Path)
     run.add_argument("--out", type=Path, default=Path("results/demo"))
+    audit=sub.add_parser("audit", help="Audit a coupled-simulation directory for failure patterns")
+    audit.add_argument("directory", type=Path, help="Directory to audit")
+    audit.add_argument("--format", choices=["text", "json"], default="text")
     args=parser.parse_args()
+
+    if args.command == "audit":
+        if not args.directory.exists() or not args.directory.is_dir():
+            print(f"error: directory not found: {args.directory}", file=sys.stderr)
+            sys.exit(2)
+        report = audit_directory(args.directory)
+        if args.format == "json":
+            print(format_report_json(report))
+        else:
+            print(format_report_text(report))
+        # Exit code: 1 if any critical failure
+        sys.exit(1 if report.fail_count > 0 else 0)
+
     c=Config.from_dict(json.loads(args.configuration.read_text(encoding="utf-8")))
     rows, report=simulate(c)
     report["step_refinement"]=step_refinement(c)
