@@ -22,6 +22,16 @@ python -m simwhy run examples/insufficient_thrust.json --out results/no-lift
 
 当前假设参数算得峰值约 **4.12 m**；另一组低推力参数为 **0 m**。它们都是**理想模型结果**，不能用于现实汽车、压力容器或安全决策。高压实际气体、气罐质量、阀门、地面效应、姿态回正和车体强度尚未建模。
 
+### 新增：可检验的耦合证据门槛
+
+仓库新增独立的 `coupling-audit` 命令，检查固定几何背压扫描是否具有超出数值漂移的上游响应，以及断开压力反馈后真实输入/输出信号是否改变：
+
+```powershell
+python -m simwhy coupling-audit examples/coupling_evidence_synthetic.json --format json
+```
+
+这里使用完全合成的反例，预期输出 `PHYSICAL_COUPLING_NOT_VALIDATED`。即使检测到数值差异也**不能直接声称物理闭环成立**；还必须完成守恒、近壁/网格、压力传播、接口状态和独立工况验证。可查看 [证据契约与局限](docs/coupling_evidence.md)。不含个人实验数据及任何商用求解器原生文件。
+
 ### 研究范围
 
 - **目前有**：真实可运行的气体喷流/一维运动模型、两组不同结果、单元与约束测试、SVG 图、CSV/JSON 数据。

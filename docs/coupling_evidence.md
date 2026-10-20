@@ -65,6 +65,14 @@ model or for the volume, heat and pressure data.
 See Ansys Fluent documentation on convergence monitoring:
 https://ansyshelp.ansys.com/public/Views/Secured/corp/v242/en/flu_ug/flu_ug_sec_solve_monitor.html
 
+## Relevant external literature (not evidence for this repository's case)
+
+- R. I. Paek (2010), [Back-pressure Effect on Shock-Train Location in a Scramjet Engine Isolator](https://scholar.afit.edu/etd/2048/): experimental variable-area ramps and the relationship between back pressure, shock-train location, and unstart. This is motivation to distinguish imposed backpressure from measured upstream response.
+- J. Lee and S. H. Kang (2019), [Numerical study on the start and unstart phenomena in a scramjet inlet-isolator model](https://doi.org/10.1371/journal.pone.0224994), *PLOS ONE*: a documented RANS isolator/inlet case that uses a downstream flap to simulate backpressure. It informs what a solver-backed pressure mechanism must demonstrate.
+- [Ansys Fluent User's Guide: monitoring solution convergence](https://ansyshelp.ansys.com/public/Views/Secured/corp/v242/en/flu_ug/flu_ug_sec_solve_monitor.html): residual decline alone does not establish a settled physical solution; monitor conserved and integrated quantities too.
+
+These are research references, **not reproduced or independently validated simulation outputs**. This repository does not include the authors' geometry, proprietary solvers, or research datasets.
+
 ## Source of generic lessons
 
 This component abstracts failure modes seen while inspecting a multi-solver
