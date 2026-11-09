@@ -1,5 +1,5 @@
 {
-  "checked_at_utc": "2026-11-02T18:28:38.843404+00:00",
+  "checked_at_utc": "2026-11-09T18:52:21.955083+00:00",
   "metadata_only": true,
   "repositories": {
     "kernel-14/ReproAgent": {
@@ -22,48 +22,48 @@
       "url": "https://github.com/Future-House/paper-qa",
       "default_branch": "main",
       "latest_push_utc": "2026-10-26T17:35:47Z",
-      "stars": 9534,
-      "open_issues": 156,
+      "stars": 9570,
+      "open_issues": 158,
       "archived": false
     },
     "peterdsharpe/AeroSandbox": {
       "url": "https://github.com/peterdsharpe/AeroSandbox",
       "default_branch": "master",
       "latest_push_utc": "2026-10-30T20:20:43Z",
-      "stars": 1384,
+      "stars": 1388,
       "open_issues": 22,
       "archived": false
     },
     "su2code/SU2": {
       "url": "https://github.com/su2code/SU2",
       "default_branch": "master",
-      "latest_push_utc": "2026-10-31T22:12:24Z",
-      "stars": 1848,
-      "open_issues": 117,
+      "latest_push_utc": "2026-11-07T14:32:27Z",
+      "stars": 1855,
+      "open_issues": 121,
       "archived": false
     },
     "OpenMDAO/OpenMDAO": {
       "url": "https://github.com/OpenMDAO/OpenMDAO",
       "default_branch": "master",
-      "latest_push_utc": "2026-11-02T17:08:31Z",
-      "stars": 816,
-      "open_issues": 83,
+      "latest_push_utc": "2026-11-06T17:52:36Z",
+      "stars": 823,
+      "open_issues": 87,
       "archived": false
     },
     "mdolab/dafoam": {
       "url": "https://github.com/mdolab/dafoam",
       "default_branch": "main",
-      "latest_push_utc": "2026-10-29T16:39:51Z",
-      "stars": 363,
+      "latest_push_utc": "2026-11-06T20:44:59Z",
+      "stars": 368,
       "open_issues": 15,
       "archived": false
     },
     "PyFR/PyFR": {
       "url": "https://github.com/PyFR/PyFR",
       "default_branch": "develop",
-      "latest_push_utc": "2026-11-01T23:26:04Z",
-      "stars": 581,
-      "open_issues": 10,
+      "latest_push_utc": "2026-11-09T08:28:54Z",
+      "stars": 584,
+      "open_issues": 11,
       "archived": false
     },
     "opensbli/opensbli": {
@@ -85,32 +85,32 @@
     "RocketPy-Team/RocketPy": {
       "url": "https://github.com/RocketPy-Team/RocketPy",
       "default_branch": "master",
-      "latest_push_utc": "2026-10-05T23:50:37Z",
-      "stars": 1160,
-      "open_issues": 87,
+      "latest_push_utc": "2026-11-07T04:16:43Z",
+      "stars": 1167,
+      "open_issues": 92,
       "archived": false
     },
     "JSBSim-Team/jsbsim": {
       "url": "https://github.com/JSBSim-Team/jsbsim",
       "default_branch": "master",
       "latest_push_utc": "2026-10-29T09:47:21Z",
-      "stars": 2328,
-      "open_issues": 56,
+      "stars": 2340,
+      "open_issues": 57,
       "archived": false
     },
     "NVIDIA/physicsnemo": {
       "url": "https://github.com/NVIDIA/physicsnemo",
       "default_branch": "main",
-      "latest_push_utc": "2026-11-02T18:24:39Z",
-      "stars": 3412,
-      "open_issues": 107,
+      "latest_push_utc": "2026-11-09T18:30:25Z",
+      "stars": 3430,
+      "open_issues": 108,
       "archived": false
     },
     "SakanaAI/AI-Scientist": {
       "url": "https://github.com/SakanaAI/AI-Scientist",
       "default_branch": "main",
       "latest_push_utc": "2025-12-19T07:46:21Z",
-      "stars": 14920,
+      "stars": 14969,
       "open_issues": 124,
       "archived": false
     },
@@ -134,16 +134,16 @@
       "url": "https://github.com/openai/mle-bench",
       "default_branch": "main",
       "latest_push_utc": "2026-04-24T17:33:44Z",
-      "stars": 1789,
-      "open_issues": 16,
+      "stars": 1793,
+      "open_issues": 18,
       "archived": false
     },
     "microsoft/agent-lightning": {
       "url": "https://github.com/microsoft/agent-lightning",
       "default_branch": "main",
-      "latest_push_utc": "2026-11-02T08:13:34Z",
-      "stars": 18874,
-      "open_issues": 185,
+      "latest_push_utc": "2026-11-05T03:09:26Z",
+      "stars": 18930,
+      "open_issues": 199,
       "archived": false
     }
   }
