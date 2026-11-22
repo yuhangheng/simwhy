@@ -14,9 +14,22 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: ${{ matrix.python-version }}
+      - name: Install
+        run: python -m pip install --upgrade pip && pip install -e .
       - name: Run dependency-free tests
         run: python -m unittest discover -s tests -v
       - name: Reproduce two example scenarios
         run: |
           python -m simwhy run examples/pressurized_jump.json --out results/pulse
           python -m simwhy run examples/insufficient_thrust.json --out results/no-lift
+      - name: Smoke-test audit CLI on the repo itself
+        shell: bash
+        # The audit exits non-zero when it finds a critical failure, and the
+        # repository root legitimately has no native CFD/Simulink artifacts.
+        # This step verifies the CLI RUNS and emits a parseable report; it must
+        # not fail merely because the verdict is negative.
+        run: |
+          set +e
+          python -m simwhy audit . --format json > audit_smoke.json
+          set -e
+          python -c "import json;d=json.load(open('audit_smoke.json'));assert 'overall_verdict' in d and 'findings' in d;print('audit CLI OK:',d['overall_verdict'],'checks:',d['summary']['total_checks'])"

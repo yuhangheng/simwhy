@@ -18,6 +18,7 @@ cd simwhy
 python -m unittest discover -s tests -v
 python -m simwhy run examples/pressurized_jump.json --out results/pulse
 python -m simwhy run examples/insufficient_thrust.json --out results/no-lift
+python -m simwhy audit <coupled-simulation-dir> --format text
 ```
 
 Windows: replace `python` with the full path to an installed Python interpreter if Windows app execution aliases intercept it.
@@ -58,6 +59,17 @@ Current version is **a dependency-free model and test harness**, *not yet* an au
 Curated, inspected project links live in [catalog/README.md](catalog/README.md). They include **ReproAgent** (paper-to-code contracts), **ReproRepo** (paper/repository reproducibility audit), **PaperQA2**, **AeroSandbox**, **SU2**, **OpenMDAO**, **DAFoam**, **RocketPy**, **JSBSim**, **PyFR**, **OpenSBLI**, **PhysicsNeMo**, and **AI Scientist**. Each entry records what to borrow and what was *not* verified.
 
 The research goal is broader than aerospace: *easy, affordable, inspectable simulations of real mechanisms*, with adapter-based expansion to **MATLAB/Simulink**, **Fluent**, open CFD codes and independently reproduced papers.
+
+## SimWhy Audit
+
+`python -m simwhy audit <dir>` is a dependency-free evidence checker for
+coupled CFD→engine→flight simulation directories. It detects 10 specific
+failure patterns observed in real research (circular mass-flow definition,
+non-physical backpressure, supersonic-exit pressure-outlet misuse,
+mass-imbalance breakdown, non-finite signals, broken FER coupling,
+gas-model mismatch, and unlabeled research parameters). See
+[docs/audit_catalog.md](docs/audit_catalog.md). Exit code is `1` if any
+critical failure is present, so it drops straight into CI.
 
 ## Contribute a phenomenon
 
