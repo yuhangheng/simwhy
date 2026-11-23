@@ -1,12 +1,12 @@
 {
-  "checked_at_utc": "2026-11-16T18:38:14.356983+00:00",
+  "checked_at_utc": "2026-11-23T20:17:59.799977+00:00",
   "metadata_only": true,
   "repositories": {
     "kernel-14/ReproAgent": {
       "url": "https://github.com/kernel-14/ReproAgent",
       "default_branch": "main",
       "latest_push_utc": "2026-08-28T09:47:38Z",
-      "stars": 4,
+      "stars": 5,
       "open_issues": 1,
       "archived": false
     },
@@ -22,32 +22,32 @@
       "url": "https://github.com/Future-House/paper-qa",
       "default_branch": "main",
       "latest_push_utc": "2026-11-16T16:16:21Z",
-      "stars": 9607,
-      "open_issues": 160,
+      "stars": 9646,
+      "open_issues": 162,
       "archived": false
     },
     "peterdsharpe/AeroSandbox": {
       "url": "https://github.com/peterdsharpe/AeroSandbox",
       "default_branch": "master",
       "latest_push_utc": "2026-10-30T20:20:43Z",
-      "stars": 1396,
-      "open_issues": 22,
+      "stars": 1401,
+      "open_issues": 23,
       "archived": false
     },
     "su2code/SU2": {
       "url": "https://github.com/su2code/SU2",
       "default_branch": "master",
-      "latest_push_utc": "2026-11-16T17:34:01Z",
-      "stars": 1863,
-      "open_issues": 123,
+      "latest_push_utc": "2026-11-23T17:33:50Z",
+      "stars": 1867,
+      "open_issues": 129,
       "archived": false
     },
     "OpenMDAO/OpenMDAO": {
       "url": "https://github.com/OpenMDAO/OpenMDAO",
       "default_branch": "master",
-      "latest_push_utc": "2026-11-15T12:33:02Z",
+      "latest_push_utc": "2026-11-23T15:47:59Z",
       "stars": 824,
-      "open_issues": 80,
+      "open_issues": 77,
       "archived": false
     },
     "mdolab/dafoam": {
@@ -61,9 +61,9 @@
     "PyFR/PyFR": {
       "url": "https://github.com/PyFR/PyFR",
       "default_branch": "develop",
-      "latest_push_utc": "2026-11-16T07:53:48Z",
+      "latest_push_utc": "2026-11-23T09:31:02Z",
       "stars": 585,
-      "open_issues": 11,
+      "open_issues": 9,
       "archived": false
     },
     "opensbli/opensbli": {
@@ -85,39 +85,39 @@
     "RocketPy-Team/RocketPy": {
       "url": "https://github.com/RocketPy-Team/RocketPy",
       "default_branch": "master",
-      "latest_push_utc": "2026-11-16T14:48:44Z",
-      "stars": 1171,
-      "open_issues": 89,
+      "latest_push_utc": "2026-11-23T12:23:00Z",
+      "stars": 1181,
+      "open_issues": 97,
       "archived": false
     },
     "JSBSim-Team/jsbsim": {
       "url": "https://github.com/JSBSim-Team/jsbsim",
       "default_branch": "master",
       "latest_push_utc": "2026-11-16T15:18:16Z",
-      "stars": 2352,
-      "open_issues": 56,
+      "stars": 2365,
+      "open_issues": 60,
       "archived": false
     },
     "NVIDIA/physicsnemo": {
       "url": "https://github.com/NVIDIA/physicsnemo",
       "default_branch": "main",
-      "latest_push_utc": "2026-11-15T17:22:54Z",
-      "stars": 3447,
-      "open_issues": 99,
+      "latest_push_utc": "2026-11-23T19:05:52Z",
+      "stars": 3474,
+      "open_issues": 108,
       "archived": false
     },
     "SakanaAI/AI-Scientist": {
       "url": "https://github.com/SakanaAI/AI-Scientist",
       "default_branch": "main",
       "latest_push_utc": "2025-12-19T07:46:21Z",
-      "stars": 15003,
+      "stars": 15036,
       "open_issues": 124,
       "archived": false
     },
     "cmudrc/agent-mcp": {
       "url": "https://github.com/cmudrc/agent-mcp",
       "default_branch": "main",
-      "latest_push_utc": "2026-10-28T14:27:15Z",
+      "latest_push_utc": "2026-11-23T17:14:53Z",
       "stars": 1,
       "open_issues": 0,
       "archived": false
@@ -134,7 +134,7 @@
       "url": "https://github.com/openai/mle-bench",
       "default_branch": "main",
       "latest_push_utc": "2026-04-24T17:33:44Z",
-      "stars": 1799,
+      "stars": 1803,
       "open_issues": 18,
       "archived": false
     },
@@ -142,8 +142,8 @@
       "url": "https://github.com/microsoft/agent-lightning",
       "default_branch": "main",
       "latest_push_utc": "2026-11-12T03:27:22Z",
-      "stars": 18963,
-      "open_issues": 184,
+      "stars": 18996,
+      "open_issues": 185,
       "archived": false
     }
   }
